@@ -1,0 +1,25 @@
+{
+  "name": "wing",
+  "displayName": "wing-syntax",
+  "description": "For the wing programming language",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.146.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "wing",
+      "aliases": ["Wing", "WingC", "wing"],
+      "extensions": [".w",".wing"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "wing",
+      "scopeName": "source.wing",
+      "path": "./syntaxes/wing.tmLanguage.json"
+    }]
+  }
+}
