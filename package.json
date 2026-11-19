@@ -4,7 +4,7 @@
   "description": "For the wing programming language",
   "version": "0.1.0",
   "engines": {
-    "vscode": "^1.146.0"
+    "vscode": "^1.80.0"
   },
   "categories": [
     "Programming Languages"

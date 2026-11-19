@@ -4,7 +4,9 @@
 	"patterns": [
 		{ "include": "#keywords" },
 		{ "include": "#numbers" },
-		{ "include": "#preprocessor"}
+		{ "include": "#preprocessor"},
+		{ "include": "#storage"},
+		{ "include": "#constant"}
 	],
 	"repository": {
 		"keywords": {
@@ -16,6 +18,30 @@
 				{
 					"name": "keyword.control.wing",
 					"match": "\\b(if|while|for|return|switch}case)\\b"
+				}
+			]
+		},
+		"storage":{
+			"patterns": [
+				{
+					"name": "storage.type.wing",
+					"match": "\\b(none|i8|i16|i32|i64|ch)\\b"
+				},
+				{
+					"name": "storage.type.function",
+					"match": "\\b(fn)\\b"
+				},
+				{
+					"name": "storage.modiifer.pointer.wing",
+					"match": "\\b(point|address)\\b"
+				}
+			]
+		},
+		"constant":{
+			"patterns": [
+				{
+					"name": "constant.language.null.wing",
+					"match": "\\b(null)\\b"
 				}
 			]
 		},
